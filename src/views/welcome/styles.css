@@ -1,0 +1,190 @@
+/*******Set Style font*********/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,900&display=swap');
+
+/*******Set Style TO  welcome-container********/
+
+.welcome-container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./../../assets/images/welcome-bg2.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position-x: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*******Set Style TO  welcome-container container********/
+
+.welcome-container .container {
+    width: 70%;
+    height: 85%;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+}
+
+/*******Set Style TO welcome-container container left-side **********/
+
+.welcome-container .container .left-side {
+    padding: 20PX 0;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #E8C030;
+}
+
+/*******Set Style TO  welcome-container container right-side********/
+
+.welcome-container .container .right-side {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*******Set Style TO  welcome-container  container left-side img **********/
+
+.welcome-container .container .left-side img {
+    width: 269px;
+    height: 250px;
+}
+
+/*******Set Style TO welcome-container container right-side img **********/
+
+.welcome-container .container .right-side img {
+    width: 239px;
+    height: 344px;
+}
+
+/*******Set Style TO  welcome-container welcome-message **********/
+
+
+.welcome-container .welcome-message {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0.085em;
+    text-align: center;
+    cursor: context-menu;
+
+}
+
+/*******Set Style TO  welcome-container welcome-btn **********/
+
+.welcome-container .welcome-btn {
+    width: 310px;
+    height: 45px;
+    padding: 8px 0;
+    left: 41px;
+    top: 630px;
+    background: #F9F4ED;
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+/****Set Style TO welcome-btn:active,welcome-btn:hover****/
+
+.welcome-btn:active,
+.welcome-btn:hover {
+    background: #d5d0ca;
+}
+
+/*******Set Style TO .have-acc********/
+
+.have-acc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: context-menu;
+}
+
+/*******Set Style TO welcome-link********/
+
+.welcome-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 26px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+/***Set Style TO  welcome-link:active,welcome-link:hover ****/
+
+.welcome-link:active,
+.welcome-link:hover {
+    color: #1f1f1f;
+}
+@media (max-width: 480px ){
+    .welcome-container{
+        width: 100vw;
+        height: 100vh;
+    }
+.welcome-container .container{
+    width: 400px;
+    height: 90%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.welcome-container .container .left-side{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    
+}
+.welcome-container .container .left-side .welcome-message{
+    position: absolute;
+    top: 15px;
+    margin-top: 0;
+    width: 80%;
+font-size: 18px;
+
+}
+.welcome-container .container .right-side{
+display: none;
+}
+/* .welcome-container .container .left-side img {
+display: none;
+} */
+
+/* .welcome-container .container .right-side img {
+    width: 159px;
+    height: 164px;
+} */
+}
